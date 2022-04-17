@@ -2,6 +2,7 @@
 const { Collection, Client } = require("discord.js");
 require("dotenv").config();
 
+
 /* It's creating a new client with the needed intents. */
 const client = new Client({
   intents: [
@@ -23,10 +24,12 @@ const client = new Client({
 });
 module.exports = client;
 
+
 /* Basically loading the even and command loader ironic right */
 require("./util/eventLoader")(client);
 
 /* It's creating a new collection for the aliases. */
+
 client.commands = new Collection();
 
 /* Logging the bot in. */
