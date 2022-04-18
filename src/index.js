@@ -25,8 +25,9 @@ const client = new Client({
 module.exports = client;
 
 
-/* Basically loading the even and command loader ironic right */
+/* Basically loading the eventloader ironic right */
 require("./util/eventLoader")(client);
+
 
 /* It's creating a new collection for the aliases. */
 

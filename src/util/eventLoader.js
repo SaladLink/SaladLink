@@ -5,7 +5,7 @@ const globPromise = promisify(glob);
 
 module.exports = async (client) => {
 
-    const eventfiles = await globPromise(`${__dirname}/../event/*.js`);
+    const eventfiles = await globPromise(`${__dirname}/../events/*.js`);
     eventfiles.map((value) => require(value));
     console.log(`Loaded ${eventfiles.length} events`);
 }
